@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html "%}
+{% load template_filters %}
+
+  {% block body_block %}
+    <h1>This is Index Page</h1>
+    <h1>{{ text|cutit:"Hello" }}</h1>
+    <h1>{{ number|add:"20" }}</h1>
+    {% endblock %}
